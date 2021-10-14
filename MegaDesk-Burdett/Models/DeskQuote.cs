@@ -61,16 +61,19 @@ namespace MegaDesk_Burdett.Models
 
             quote.deskSizePrice = (desk.width * desk.depth) * DeskQuote.PRICEPERINCH;
 
+            // this comes from the file
+            var rushOrderPrices = DataStorage.getRushOrderPrices();
+
             switch (deliveryOptions)
             {
                 case DeliveryOptions.Three:
-                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? 60 : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? 70 : 80);
+                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? rushOrderPrices[(int)DeliveryOptions.Three, 0] : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? rushOrderPrices[(int)DeliveryOptions.Three, 1] : rushOrderPrices[(int)DeliveryOptions.Three, 2]);
                     break;
                 case DeliveryOptions.Five:
-                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? 40 : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? 50 : 60);
+                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? rushOrderPrices[(int)DeliveryOptions.Five, 0] : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? rushOrderPrices[(int)DeliveryOptions.Five, 1] : rushOrderPrices[(int)DeliveryOptions.Five, 2]);
                     break;
                 case DeliveryOptions.Seven:
-                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? 30 : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? 35 : 40);
+                    quote.shippingCost = ((quote.deskSizePrice < 1000) ? rushOrderPrices[(int)DeliveryOptions.Seven, 0] : (quote.deskSizePrice > 1000 && quote.deskSizePrice < 2000) ? rushOrderPrices[(int)DeliveryOptions.Seven, 1] : rushOrderPrices[(int)DeliveryOptions.Seven, 2]);
                     break;
             }
 

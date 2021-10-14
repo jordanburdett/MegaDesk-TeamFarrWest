@@ -194,6 +194,8 @@ namespace MegaDesk_Burdett
             Desk newDesk = new Desk((int)DeskWidthInputField.Value, (int)DeskDepthInputField.Value, (int)NumberOfDrawersTextField.Value, materialType);
             DeskQuote newQuote = new DeskQuote(newDesk, CustomerNameTextField.Text, deliveryOptions);
 
+            // store the new desk in the json file.
+
             // create new view
             DisplayQuotes displayQuoteView = new DisplayQuotes();
             displayQuoteView.Tag = this;

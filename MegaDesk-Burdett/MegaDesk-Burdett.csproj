@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\DataStorage.cs" />
     <Compile Include="Models\Desk.cs" />
     <Compile Include="Models\DeskQuote.cs" />
     <Compile Include="Views\AddQuote.cs">
@@ -116,6 +117,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\rushOrderPrices.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
