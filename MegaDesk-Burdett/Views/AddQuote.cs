@@ -208,5 +208,10 @@ namespace MegaDesk_Burdett
             // show the other form
             displayQuoteView.Show();
         }
+
+        private void DeliveryOptionsErrorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

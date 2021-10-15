@@ -1,6 +1,6 @@
 [
   {
-    "quoteDate": "2021-10-14T20:34:27.4391537-06:00",
+    "quoteDate": "2021-10-14T19:34:27.4391537-07:00",
     "desk": {
       "width": 24,
       "depth": 12,
@@ -17,12 +17,12 @@
       "deskMaterialPrice": 100.0,
       "deskSizePrice": 288.0,
       "deskDrawersPrice": 0.0,
-      "quoteDate": "2021-10-14T20:34:27.4391537-06:00"
+      "quoteDate": "2021-10-14T19:34:27.4391537-07:00"
     },
     "dateDisplayString": "10/14/2021"
   },
   {
-    "quoteDate": "2021-10-14T21:22:45.4857304-06:00",
+    "quoteDate": "2021-10-14T20:22:45.4857304-07:00",
     "desk": {
       "width": 24,
       "depth": 12,
@@ -39,12 +39,12 @@
       "deskMaterialPrice": 100.0,
       "deskSizePrice": 288.0,
       "deskDrawersPrice": 0.0,
-      "quoteDate": "2021-10-14T21:22:45.4857304-06:00"
+      "quoteDate": "2021-10-14T20:22:45.4857304-07:00"
     },
     "dateDisplayString": "10/14/2021"
   },
   {
-    "quoteDate": "2021-10-14T21:56:47.4021997-06:00",
+    "quoteDate": "2021-10-14T20:56:47.4021997-07:00",
     "desk": {
       "width": 24,
       "depth": 12,
@@ -61,7 +61,73 @@
       "deskMaterialPrice": 100.0,
       "deskSizePrice": 288.0,
       "deskDrawersPrice": 0.0,
-      "quoteDate": "2021-10-14T21:56:47.4021997-06:00"
+      "quoteDate": "2021-10-14T20:56:47.4021997-07:00"
+    },
+    "dateDisplayString": "10/14/2021"
+  },
+  {
+    "quoteDate": "2021-10-14T22:44:23.6010489-07:00",
+    "desk": {
+      "width": 25,
+      "depth": 13,
+      "numOfDrawers": 3,
+      "DesktopMaterial": 1
+    },
+    "customerName": "Joe",
+    "deliveryOptions": 0,
+    "totalPrice": 1000875.0,
+    "quoteDetails": {
+      "customerName": "Joe",
+      "shippingCost": 1000000.0,
+      "deskBasePrice": 200.0,
+      "deskMaterialPrice": 200.0,
+      "deskSizePrice": 325.0,
+      "deskDrawersPrice": 150.0,
+      "quoteDate": "2021-10-14T22:44:23.6010489-07:00"
+    },
+    "dateDisplayString": "10/14/2021"
+  },
+  {
+    "quoteDate": "2021-10-14T22:44:59.2724783-07:00",
+    "desk": {
+      "width": 24,
+      "depth": 12,
+      "numOfDrawers": 0,
+      "DesktopMaterial": 1
+    },
+    "customerName": "Watt",
+    "deliveryOptions": 0,
+    "totalPrice": 1000688.0,
+    "quoteDetails": {
+      "customerName": "Watt",
+      "shippingCost": 1000000.0,
+      "deskBasePrice": 200.0,
+      "deskMaterialPrice": 200.0,
+      "deskSizePrice": 288.0,
+      "deskDrawersPrice": 0.0,
+      "quoteDate": "2021-10-14T22:44:59.2724783-07:00"
+    },
+    "dateDisplayString": "10/14/2021"
+  },
+  {
+    "quoteDate": "2021-10-14T23:00:32.452613-07:00",
+    "desk": {
+      "width": 24,
+      "depth": 12,
+      "numOfDrawers": 0,
+      "DesktopMaterial": 1
+    },
+    "customerName": "Test",
+    "deliveryOptions": 1,
+    "totalPrice": 728.0,
+    "quoteDetails": {
+      "customerName": "Test",
+      "shippingCost": 40.0,
+      "deskBasePrice": 200.0,
+      "deskMaterialPrice": 200.0,
+      "deskSizePrice": 288.0,
+      "deskDrawersPrice": 0.0,
+      "quoteDate": "2021-10-14T23:00:32.452613-07:00"
     },
     "dateDisplayString": "10/14/2021"
   }

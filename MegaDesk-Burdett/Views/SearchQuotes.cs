@@ -23,5 +23,7 @@ namespace MegaDesk_Burdett
             this.Close();
             mainMenuView.Show();
         }
+
+      
     }
 }

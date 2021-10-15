@@ -281,6 +281,7 @@
             this.DeliveryOptionsErrorLabel.Size = new System.Drawing.Size(125, 13);
             this.DeliveryOptionsErrorLabel.TabIndex = 23;
             this.DeliveryOptionsErrorLabel.Text = "3,5,7";
+            this.DeliveryOptionsErrorLabel.Click += new System.EventHandler(this.DeliveryOptionsErrorLabel_Click);
             // 
             // DeliveryOptionsTextField
             // 

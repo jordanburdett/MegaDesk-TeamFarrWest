@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\SearchQuotes.resx">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
@@ -124,6 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\rushOrderPrices.txt" />
+    <None Include="Resources\Computer-Desk-Transparent-PNG1.png" />
+    <None Include="Resources\Computer-Desk-Transparent-PNG.png" />
+    <None Include="Resources\desk.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
