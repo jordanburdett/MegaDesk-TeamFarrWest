@@ -195,6 +195,7 @@ namespace MegaDesk_Burdett
             DeskQuote newQuote = new DeskQuote(newDesk, CustomerNameTextField.Text, deliveryOptions);
 
             // store the new desk in the json file.
+            DataStorage.addNewQuote(newQuote);
 
             // create new view
             DisplayQuotes displayQuoteView = new DisplayQuotes();

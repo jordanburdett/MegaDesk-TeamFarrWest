@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace MegaDesk_Burdett.Models
     public static class DataStorage
     {
         // array of quotes
-        static List<DeskQuote> deskQuotes = new List<DeskQuote>();
+        private static List<DeskQuote> deskQuotes = new List<DeskQuote>();
 
         // returns all the quotes
         public static List<DeskQuote> getQuotes()
@@ -53,15 +54,47 @@ namespace MegaDesk_Burdett.Models
 
         // read in the deskQuotes.json
         private static void readJSON()
-        { 
-            
+        {
+            // if the file doesn't exist return.
+            if (!System.IO.File.Exists("../../Data/quotes.json"))
+            {
+                return;
+            }
+
+            // just in case try catch.
+            try
+            {
+                string json = System.IO.File.ReadAllText("../../Data/quotes.json");
+
+                // deserialize json into object
+                deskQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(json);
+            }
+            catch (System.IO.FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return;
+            }
         }
 
-        private static void writeJSON()
-        { 
-            
+        // writes the current quotes to a json file.
+        private static bool writeJSON()
+        {
+            // serialize our object
+            var json = JsonConvert.SerializeObject(deskQuotes, Formatting.Indented);
+
+            try
+            {
+                System.IO.File.WriteAllText("../../Data/quotes.json", json);
+                return true;
+            }
+            catch (System.IO.IOException e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
         }
 
+        // gets the current rushOrderPrices from a file.
         public static int[,] getRushOrderPrices()
         {
             // read in the prices from a file alerady written

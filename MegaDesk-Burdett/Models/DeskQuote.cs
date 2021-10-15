@@ -13,11 +13,17 @@ namespace MegaDesk_Burdett.Models
             this.desk = desk;
             this.customerName = customerName;
             this.deliveryOptions = delivery;
+            this.quoteDetails = calculateQuote();
+            this.totalPrice = this.quoteDetails.getTotalCost();
         }
 
         public Desk desk {  get; set; }
         public string customerName {  get; set; }
         public DeliveryOptions deliveryOptions {  get; set; }
+
+        public double totalPrice {  get; set; }
+
+        public QuoteDetails quoteDetails {  get; set; }
 
         public DateTime quoteDate = DateTime.Now;
 
