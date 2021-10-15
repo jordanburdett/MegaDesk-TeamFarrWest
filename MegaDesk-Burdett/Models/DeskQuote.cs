@@ -15,6 +15,7 @@ namespace MegaDesk_Burdett.Models
             this.deliveryOptions = delivery;
             this.quoteDetails = calculateQuote();
             this.totalPrice = this.quoteDetails.getTotalCost();
+            this.dateDisplayString = this.quoteDate.GetDateTimeFormats().First();
         }
 
         public Desk desk {  get; set; }
@@ -24,6 +25,8 @@ namespace MegaDesk_Burdett.Models
         public double totalPrice {  get; set; }
 
         public QuoteDetails quoteDetails {  get; set; }
+
+        public string dateDisplayString { get; set; }
 
         public DateTime quoteDate = DateTime.Now;
 

@@ -78,11 +78,11 @@
     <Compile Include="Views\SearchQuotes.Designer.cs">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ViewAllQuotes.cs">
+    <Compile Include="Views\ViewQuotes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ViewAllQuotes.Designer.cs">
-      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    <Compile Include="Views\ViewQuotes.Designer.cs">
+      <DependentUpon>ViewQuotes.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\AddQuote.resx">
       <DependentUpon>AddQuote.cs</DependentUpon>
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="Views\SearchQuotes.resx">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ViewAllQuotes.resx">
-      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ViewQuotes.resx">
+      <DependentUpon>ViewQuotes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

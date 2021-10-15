@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MegaDesk_Burdett.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,10 +28,10 @@ namespace MegaDesk_Burdett
 
         private void ViewQuotesButton_Click(object sender, EventArgs e)
         {
-            DisplayQuotes displayQuoteView = new DisplayQuotes();
-            displayQuoteView.Tag = this;
+            ViewQuotes viewQuotesScreen = new ViewQuotes();
+            viewQuotesScreen.Tag = this;
             this.Hide();
-            displayQuoteView.Show();
+            viewQuotesScreen.Show();
         }
 
         private void SearchQuotesButton_Click(object sender, EventArgs e)
