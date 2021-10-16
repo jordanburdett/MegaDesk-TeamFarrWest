@@ -52,17 +52,17 @@
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(127, 59);
             this.BackButton.TabIndex = 1;
-            this.BackButton.Text = "Return to Main Menu";
+            this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(285, 29);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(304, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 42);
+            this.label1.Size = new System.Drawing.Size(210, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Quote Details";
             // 
