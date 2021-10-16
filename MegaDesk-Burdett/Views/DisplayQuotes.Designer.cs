@@ -52,7 +52,7 @@
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(127, 59);
             this.BackButton.TabIndex = 1;
-            this.BackButton.Text = "Return to Main Menu";
+            this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
