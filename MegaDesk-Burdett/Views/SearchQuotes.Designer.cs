@@ -70,7 +70,9 @@
             // 
             // MaterialComboBox
             // 
+            this.MaterialComboBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.MaterialComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MaterialComboBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.MaterialComboBox.FormattingEnabled = true;
             this.MaterialComboBox.Items.AddRange(new object[] {
             "laminate",
@@ -86,6 +88,7 @@
             // 
             // SearchQuotesResults
             // 
+            this.SearchQuotesResults.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SearchQuotesResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SearchQuotesResults.Location = new System.Drawing.Point(197, 170);
             this.SearchQuotesResults.Name = "SearchQuotesResults";
