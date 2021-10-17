@@ -262,5 +262,27 @@
       "quoteDate": "2021-10-16T13:51:33.9730957-07:00"
     },
     "dateDisplayString": "10/16/2021"
+  },
+  {
+    "quoteDate": "2021-10-16T20:32:22.8444622-07:00",
+    "desk": {
+      "width": 24,
+      "depth": 12,
+      "numOfDrawers": 0,
+      "DesktopMaterial": 1
+    },
+    "customerName": "joe",
+    "deliveryOptions": 2,
+    "totalPrice": 718.0,
+    "quoteDetails": {
+      "customerName": "joe",
+      "shippingCost": 30.0,
+      "deskBasePrice": 200.0,
+      "deskMaterialPrice": 200.0,
+      "deskSizePrice": 288.0,
+      "deskDrawersPrice": 0.0,
+      "quoteDate": "2021-10-16T20:32:22.8444622-07:00"
+    },
+    "dateDisplayString": "10/16/2021"
   }
 ]
